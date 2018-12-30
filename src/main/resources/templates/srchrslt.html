@@ -1,0 +1,28 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Search results!</title>
+    </head>
+
+
+    
+    <body>
+        <h1>Search results!</h1>
+
+
+        <ul>
+            <li>
+                <div th:remove="tag" th:utext="${Su.address}"></div>
+                
+            </li>
+        </ul>
+
+        <form action="#" th:action="@{/search}" method="POST">
+            <p><label for="name">Name</label>: <input type="text" name="name" id="name"/></p>
+            <p><input type="submit" value="Submit" /></p>
+        </form>
+
+
+    </body>
+    
+
+</html>

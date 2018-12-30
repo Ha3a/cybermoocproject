@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title>Admin panel </title>
+    </head>
+    <body>
+
+        <h1>Admin panel</h1>
+
+
+        <p>Delete ALL sign ups, type yes to confirm</p>
+        <form action="#" th:action="@{/admin}" method="POST">
+            <p><label for="address">Enter confirmation</label>: <input type="text" name="address" id="address"/></p>
+            <p><input type="submit" value="Submit" /></p>
+        </form>
+
+        <p></p>
+    </body>
+</html>
